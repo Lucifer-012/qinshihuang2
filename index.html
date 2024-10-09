@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我是秦始皇</title>
+    <script>
+        function changepos()
+        {
+            var left=getRandomNumber(0,1200);
+            var top=getRandomNumber(0,500);
+            document.getElementById("div1").style.left=left+"px";
+            document.getElementById("div1").style.top=top+"px";
+        }
+        function getRandomNumber(min,max){
+            return Math.floor(Math.random()*(max -min +1)+min);
+        }
+    </script>
+</head>
+<body>
+    
+    <div id="div1" onmousemove="changepos()" style="border: solid 2px blue; width: 150px; height: 150px; text-align: center; position: absolute; left: 300px;top: 100px;">
+        打钱1000元，让你当大将军<br/>
+        <input type="button" value="        打钱       " onclick="alert('不适戈门，你还真点到了')"/>
+
+    </div>
+    <div id="div2" style="border: solid 2px red; width: 100px; height: 100px; text-align: center; position: relative;">
+    我是秦始皇
+    </div>
+</body>
+</html>
